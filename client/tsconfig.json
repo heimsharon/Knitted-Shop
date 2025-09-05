@@ -1,4 +1,5 @@
 {
+  //client template
   "extends": "../tsconfig.json",
   "compilerOptions": {
     // Client-specific overrides

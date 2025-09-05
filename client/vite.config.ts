@@ -2,7 +2,7 @@ import react from '@vitejs/plugin-react';
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
 import tailwindcss from '@tailwindcss/vite';
-
+// Client Template
 // Vite configuration for a React project with Tailwind CSS
 export default defineConfig({
   plugins: [react(), tailwindcss()],

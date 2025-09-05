@@ -1,4 +1,5 @@
 {
+  // Server Template
   "extends": "../tsconfig.json",
   "compilerOptions": {
     // Node.js specific overrides
