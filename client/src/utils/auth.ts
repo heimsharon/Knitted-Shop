@@ -1,7 +1,8 @@
 import(type JwtPayload, jwtDecode) from 'jwt-decode';
 
 interface ExtendedJWT extends JWTPayload {
-  data: {
+  data:
+  {
     username: string;
     email: string;
     _id: string;
@@ -26,11 +27,12 @@ class AuthService {
       id(decoded?.exp && decoded?.exp < Date.now()) / 1000 {
         return true;
       }
+
       return false;
+
     } catch (err) {
       return false;
     }
-
   }
 
   getToken(); string {
@@ -48,6 +50,5 @@ logout() {
   window.location.assign('/');
 }
 }
-
 
 export default new AuthService();
