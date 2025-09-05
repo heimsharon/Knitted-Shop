@@ -1,0 +1,178 @@
+# =============================================================================
+# ROOT GITIGNORE TEMPLATE
+# =============================================================================
+
+# =============================================================================
+# DEPENDENCIES & PACKAGE MANAGERS
+# =============================================================================
+# Node.js
+node_modules/
+**/node_modules/
+
+# Package manager caches
+.npm/
+.yarn/
+.pnpm/
+
+# =============================================================================
+# BUILD OUTPUTS & COMPILED FILES
+# =============================================================================
+# Build directories
+dist/
+build/
+out/
+
+# Framework-specific builds
+.next/
+.nuxt/
+.output/
+.vite/
+
+# Compiled files
+*.js.map
+*.css.map
+*.d.ts
+*.tsbuildinfo
+
+# =============================================================================
+# ENVIRONMENT & CONFIGURATION
+# =============================================================================
+# Environment files
+.env
+.env.*
+.env.local
+.env.*.local
+
+# Configuration files with secrets
+config/secrets.json
+config/private.json
+
+# =============================================================================
+# DEVELOPMENT & TESTING
+# =============================================================================
+
+# Testing outputs
+test-results/
+test-reports/
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+
+# =============================================================================
+# LOGS & TEMPORARY FILES
+# =============================================================================
+# Log files
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+.temp/
+.cache/
+
+# =============================================================================
+# EDITOR & IDE FILES
+# =============================================================================
+# VS Code (keep workspace settings, ignore user-specific)
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# =============================================================================
+# OPERATING SYSTEM FILES
+# =============================================================================
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+desktop.ini
+
+
+# =============================================================================
+# MODERN WEB FRAMEWORKS & TOOLS
+# =============================================================================
+# React/Next.js
+.next/
+out/
+
+# Vite
+*.local
+
+# Monorepo tools
+.nx/
+
+# =============================================================================
+# DATABASE & DATA FILES
+# =============================================================================
+
+# *.sqlite
+# *.sqlite3
+# *.db-journal
+# *.db-wal
+# *.db-shm
+
+# Database exports (temporary)
+*.sql
+*.dump
+
+# =============================================================================
+# DEPLOYMENT
+# =============================================================================
+# Hosting platforms
+.vercel/
+.netlify/
+.railway/
+
+# Infrastructure as code
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# =============================================================================
+# SECURITY & SECRETS
+# =============================================================================
+# Private keys
+*.pem
+*.key
+*.crt
+
+# API keys and tokens
+.env.keys
+secrets.json
+credentials.json
+
+# =============================================================================
+# TEMPORARY & MEDIA FILES
+# =============================================================================
+# Backup files
+*.bak
+*.backup
+
+# Temporary media processing
+*.tmp.mp4
+*.tmp.mov
+*_temp.*
+*_processing.*
+
+# =============================================================================
+
+

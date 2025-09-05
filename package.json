@@ -1,0 +1,82 @@
+{
+  "name": "root-knitted-shop",
+  "version": "1.0.0",
+  "description": "E-Commerce web application selling knitted items",
+  "author": "Sharon Heim <heimsharon3@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "scripts": {
+    "// === QUICK START ===": "",
+    "install:all": "npm install",
+    "dev": "npm run start:dev",
+    "build": "npm run server:build && npm run client:build",
+    "start": "npm run server",
+    "test": "npm run test --workspaces",
+
+    "// === DEVELOPMENT ===": "",
+    "start:dev": "concurrently \"npm run server:dev\" \"npm run client:dev\" --names \"SERVER,CLIENT\" --prefix-colors \"blue,green\"",
+
+    "// === CLIENT COMMANDS ===": "",
+    "client:dev": "npm run dev --workspace=client",
+    "client:build": "npm run build --workspace=client",
+    "client:preview": "npm run preview --workspace=client",
+    "client:test": "npm run test --workspace=client",
+
+    "// === SERVER COMMANDS ===": "",
+    "server:dev": "npm run dev --workspace=server",
+    "server:build": "npm run build --workspace=server",
+    "server:start": "npm run start --workspace=server",
+    "server:test": "npm run test --workspace=server",
+
+    "// === TESTING ===": "",
+    "test:watch": "npm run test:watch --workspaces",
+    "test:coverage": "npm run test:coverage --workspaces",
+    "test:ui": "npm run test:ui --workspace=client",
+
+    "// === CODE QUALITY ===": "",
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
+    "lint:fix": "eslint . --ext .ts,.tsx,.js,.jsx --fix",
+    "lint:client": "eslint client --ext .ts,.tsx,.js,.jsx",
+    "lint:server": "eslint server --ext .ts,.js",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "type-check": "tsc --noEmit && npm run type-check --workspaces --if-present",
+
+    "// === MAINTENANCE ===": "",
+    "clean": "npm run clean --workspaces --if-present && if exist dist rmdir /s /q dist",
+    "audit": "npm audit --workspaces",
+    "audit:fix": "npm audit fix --workspaces",
+    "audit:root": "npm audit",
+
+    "// === DEPENDENCY MANAGEMENT ===": "",
+    "deps:check": "npx syncpack list-mismatches",
+    "deps:fix": "npx syncpack fix-mismatches",
+    "deps:update": "npm update --workspaces",
+    "deps:sync": "npm run deps:check && npm run deps:fix"
+  },
+  
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "concurrently": "^9.1.0",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.2",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.14",
+    "prettier": "^3.4.2",
+    "rimraf": "^6.0.1",
+    "syncpack": "^13.0.0",
+    "typescript": "^5.7.2"
+  }
+}

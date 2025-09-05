@@ -1,0 +1,44 @@
+# =============================================================================
+# CLIENT GITIGNORE TEMPLATE
+# =============================================================================
+# React/Vite frontend patterns
+
+# =============================================================================
+# BUILD & STATIC FILES
+# =============================================================================
+# Client build outputs
+dist/
+build/
+
+# Framework builds
+.next/
+out/
+
+# Generated static files
+public/build/
+public/dist/
+public/static/build/
+
+# =============================================================================
+# CLIENT DEVELOPMENT
+# =============================================================================
+# Vite/React specific
+*.local
+.vite/
+
+# Client cache files
+.eslintcache
+.stylelintcache
+
+# =============================================================================
+# CLIENT ENVIRONMENT
+# =============================================================================
+# Client environment files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Client-specific configs
+vite.config.local.ts
+.env.client

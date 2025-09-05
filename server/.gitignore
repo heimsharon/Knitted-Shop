@@ -1,0 +1,49 @@
+# =============================================================================
+# SERVER GITIGNORE TEMPLATE
+# =============================================================================
+# Express/Node.js backend patterns
+
+# =============================================================================
+# BUILD & COMPILED FILES
+# =============================================================================
+# Server build outputs
+dist/
+build/
+lib/
+
+# =============================================================================
+# SERVER-SPECIFIC FILES
+# =============================================================================
+# Database files
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# File uploads
+uploads/
+public/uploads/
+static/uploads/
+
+# Session storage
+sessions/
+.sessions/
+
+# Server process files
+*.pid
+pids/
+
+# =============================================================================
+# SERVER ENVIRONMENT
+# =============================================================================
+# Server environment files
+.env.server
+.env.production
+.env.development
+.env.test
+
+# Server-specific secrets
+database.json
+server-config.json
