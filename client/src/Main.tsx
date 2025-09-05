@@ -1,6 +1,7 @@
 import react { Suspense, lazy } from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
 import './index.css';//need to update
 import App from './App';
 
