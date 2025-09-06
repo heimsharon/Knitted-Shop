@@ -60,7 +60,7 @@ const renderMenuItem = (
  */
 const SingleLevelDropdownMenu: React.FC<SingleLevelDropdownMenuProps> = ({
     buttonLabel,
-    items,
+    menuItems,
 }) => {
     const [open, setOpen] = useState(false); // Dropdown open/close state
     const menuRef = useRef<HTMLDivElement>(null);
@@ -115,7 +115,7 @@ const SingleLevelDropdownMenu: React.FC<SingleLevelDropdownMenuProps> = ({
                 role="menu"
                 style={{ display: open ? 'block' : 'none' }}
             >
-                {items.map((item, idx) =>
+                {menuItems.map((item, idx) =>
                     renderMenuItem(item, open, idx, closeDropdown)
                 )}
             </div>
