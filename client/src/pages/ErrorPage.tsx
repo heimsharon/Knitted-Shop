@@ -46,7 +46,7 @@ const errorInfo: Record<number,
     },
     408: {
         title: '408 - Request Timeout',
-        message: 'The request timed out. Please try again.',
+        message: 'The Request has timed out. Please try again.',
         emoji: '⌛',
     },
     409: {
@@ -56,47 +56,52 @@ const errorInfo: Record<number,
     },
     410: {
         title: '410 - Gone',
-        message: 'The resource you are looking for is no longer available.',
+        message: 'The Resource you are looking for is no longer available.',
         emoji: '🗑️',
     },
     413: {
         title: '413 - Payload Too Large',
-        message: 'The request is too large for the server to process.',
+        message: 'The Request is too large for the server to process.',
         emoji: '📦',
     },
     415: {
         title: '415 - Unsupported Media Type',
-        message: 'The server cannot process the media type of the request.',
+        message: 'The Server cannot process the media type requested.',
         emoji: '🗂️',
+    },
+    418: {
+        title: '418 - Product Out of Stock',
+        message: 'The Item(s) are currently Out of Stock or Unavailable.'
+        emoji: '🫖'
     },
     422: {
         title: '422 - Unprocessable Entity',
-        message: 'The request was well-formed but could not be processed.',
+        message: 'The Request was well-formed but could not be processed.',
         emoji: '❓',
     },
     429: {
         title: '429 - Too Many Requests',
-        message: 'You have made too many requests. Please slow down.',
+        message: 'You have made too many requests in a short amount of time.',
         emoji: '🚦',
     },
     500: {
         title: '500 - Internal Server Error',
-        message: 'A server error occurred. Please try again later.',
+        message: 'A Server error occurred. Please try again later.',
         emoji: '💥',
     },
     503: {
         title: '503 - Service Unavailable',
-        message: 'The server is currently unavailable. Please try again later.',
+        message: 'The Server is currently unavailable. Please try again later.',
         emoji: '🛠️',
     },
     504: {
         title: '504 - Gateway Timeout',
-        message: 'The server did not respond in time. Please try again.',
+        message: 'The Server has timed-out. Please try again.',
         emoji: '⏳',
     },
     511: {
         title: '511 - Network Authentication Required',
-        message: 'Network authentication is required to access this resource.',
+        message: 'Network Authentication is required to access this resource.',
         emoji: '🌐',
     },
 };

@@ -5,8 +5,8 @@ import '..assets/styles/homepage.css'
 const HomePage: React.FC = () => {
   return (
     <HomeContainer>
-    <Title>Welcome to the Knitted Shop</Title>
-    <p> Find your knitted item to cherish</p>
+      <Title>Welcome to the Crochet Mushroom Shop</Title>
+      <p> Find a crochet item to cherish</p>
     </HomeContainer>
   )
 };
