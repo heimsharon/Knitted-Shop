@@ -5,7 +5,7 @@ import '..assets/styles/homepage.css'
 const HomePage: React.FC = () => {
   return (
     <HomeContainer>
-      <Title>Welcome to the Crochet Mushroom Shop</Title>
+      <h1>Welcome to the Crocheted Mushroom Shop</h1>
       <p> Find a crochet item to cherish</p>
     </HomeContainer>
   )
