@@ -71,7 +71,7 @@ const errorInfo: Record<number,
     },
     418: {
         title: '418 - Product Out of Stock',
-        message: 'The Item(s) are currently Out of Stock or Unavailable.'
+        message: 'The Item(s) are currently Out of Stock or Unavailable.',
         emoji: '🫖'
     },
     422: {
