@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import SingleLevelDropdownMenu from './SingleLevelDropdownMenu';
-import (useAuth) from '......'//needs updating
+import { useAuth } from '@/utils/auth';
 import { FaTag, FaFeather, FaBug, FaPaw, FaStar, FaTractor, FaDragon, FaLizard, FaFish, FaHippo, FaTree, FaComments, FaCart, FaUserCircle, FaEnvelope, FaQuestionCircle, FaBook, FaLifeRing, FaLeaf, FaUserFriends, FaTachometerAlt, FaBoxOpen, FaUserShield } from 'react-icons/fa';
 
 export default function Navbar() {
@@ -42,8 +42,7 @@ export default function Navbar() {
                 { title: 'Messages', url: '/messages', icon: <FaComments aria-label='Chat Bubble' /> },
                 { title: 'Orders', url: '/orders', icon: <FaCart aria-label='Shopping Cart' /> },
                 { title: 'Profile', url: '/profile', icon: <FaUserCircle aria-label='User Circle' /> },
-              ]
-            }
+              ]}
           />
         )}
 
@@ -68,10 +67,8 @@ export default function Navbar() {
                 { title: 'Dashboard', url: '/dashboard', icon: <FaTachometerAlt /> },
                 { title: 'Product Management', url: '/product-management', icon: <FaBoxOpen /> },
                 { title: 'Role Management', url: '/role-management', icon: <FaUserShield /> }
-
               ]}
           />
-
         )}
 
       </div>
