@@ -2,7 +2,7 @@ import React from "react";
 import social // need to update
 import ''//update style sheet
 
-const Footer: React.FC () => {
+const Footer: React.FC = () => {
   return (
   <footer className='footer';></footer>
       <div className='foot_content'
